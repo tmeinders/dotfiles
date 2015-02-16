@@ -18,11 +18,12 @@ vim plugins.
 
 ## install
 
-Run this:
+Run the following:
 
 ```sh
-git clone https://github.com/tmeinders/dotfiles.git ~/.dotfiles
+git clone --recursive https://github.com/tmeinders/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
-
+There are a few submodules included which are assumed to be loaded when
+bootstrapping, so the `recursive` flag is important.

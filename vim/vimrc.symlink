@@ -1,3 +1,4 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype indent plugin on
 execute pathogen#infect()
 syntax enable
