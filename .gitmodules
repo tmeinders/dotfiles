@@ -6,13 +6,13 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/vim.symlink/bundle/detectindent"]
 	path = vim/vim.symlink/bundle/detectindent
-	url = git@github.com:ciaranm/detectindent.git
+	url = https://github.com:ciaranm/detectindent.git
 [submodule "vim/vim.symlink/bundle/vim-colors-solarized"]
 	path = vim/vim.symlink/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/vim.symlink/bundle/vim-sensible"]
 	path = vim/vim.symlink/bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "vim/vim.symlink/bundle/vim-javascript-syntax"]
 	path = vim/vim.symlink/bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax.git
