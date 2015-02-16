@@ -41,7 +41,7 @@ done
 unset config_files
 
 
-source ~/devel/antigen/antigen.zsh
+source ~/.dotfiles/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle heroku
 antigen bundle vagrant
