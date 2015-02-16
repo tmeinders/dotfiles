@@ -2,6 +2,8 @@
 #
 # bootstrap installs things.
 
+chsh -s $(which zsh)
+
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd)
 
