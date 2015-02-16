@@ -1,4 +1,12 @@
-syntax on
-
-" Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+execute pathogen#infect()
+syntax enable
+filetype plugin indent on
+set background=dark
+colorscheme solarized
+autocmd VimEnter * DetectIndent 
+
+set ts=4
+set ignorecase
+set number
+set shiftwidth=4
