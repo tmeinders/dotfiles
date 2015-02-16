@@ -1,12 +1,12 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-filetype indent plugin on
 execute pathogen#infect()
+autocmd VimEnter * DetectIndent 
+set smartindent
 syntax enable
 filetype plugin indent on
 set background=dark
 colorscheme solarized
-autocmd VimEnter * DetectIndent 
-
+ 
 set ts=4
 set ignorecase
 set number

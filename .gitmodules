@@ -19,3 +19,12 @@
 [submodule "vim/vim.symlink/bundle/tern_for_vim"]
 	path = vim/vim.symlink/bundle/tern_for_vim
 	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "vim/vim.symlink/bundle/JavaScript-Indent"]
+	path = vim/vim.symlink/bundle/JavaScript-Indent
+	url = https://github.com/vim-scripts/JavaScript-Indent.git
+[submodule "vim/vim.symlink/bundle/SQLComplete.vim"]
+	path = vim/vim.symlink/bundle/SQLComplete.vim
+	url = https://github.com/vim-scripts/SQLComplete.vim.git
+[submodule "vim/vim.symlink/bundle/dbext.vim"]
+	path = vim/vim.symlink/bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim.git
