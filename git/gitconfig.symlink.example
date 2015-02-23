@@ -36,3 +36,8 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+[oh-my-zsh]
+	# Setting to never let themes present git status in shell prompt. Some of 
+	# the git repos of my clients are massive and the status ties up the prompt
+	# for far too long
+	hide-status = 1
