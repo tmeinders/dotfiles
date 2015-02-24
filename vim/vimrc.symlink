@@ -11,3 +11,7 @@ set ts=4
 set ignorecase
 set number
 set shiftwidth=4
+set rnu
+autocmd InsertEnter * :set rnu!
+autocmd InsertLeave * :set rnu
+
