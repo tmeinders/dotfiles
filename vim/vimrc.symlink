@@ -14,4 +14,6 @@ set shiftwidth=4
 set rnu
 autocmd InsertEnter * :set rnu!
 autocmd InsertLeave * :set rnu
+autocmd WinLeave * :set relativenumber!
+autocmd WinEnter * :set relativenumber
 
