@@ -59,3 +59,16 @@ unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
+# handy gui function for kicking off and backgrounding graphical application
+
+
+gui ()
+{
+	if [ $# -gt 0 ] ; then
+		#($@ &) &>/dev/null
+		($@ &) &
+	else
+		echo "missing argument"
+	fi
+}
+
