@@ -16,4 +16,4 @@ autocmd InsertEnter * :set rnu!
 autocmd InsertLeave * :set rnu
 autocmd WinLeave * :set relativenumber!
 autocmd WinEnter * :set relativenumber
-
+set path=.,**
