@@ -5,7 +5,7 @@ set smartindent
 syntax enable
 filetype plugin indent on
 set background=dark
-colorscheme solarized
+" colorscheme solarized
  
 set ts=4
 set ignorecase
@@ -17,3 +17,8 @@ autocmd InsertLeave * :set rnu
 autocmd WinLeave * :set relativenumber!
 autocmd WinEnter * :set relativenumber
 set path=.,**
+
+
+"to prevent clash with youcompleteme, change snippet trigger
+imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
