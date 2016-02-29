@@ -28,3 +28,9 @@
 [submodule "vim/vim.symlink/bundle/dbext.vim"]
 	path = vim/vim.symlink/bundle/dbext.vim
 	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "vim/vim.symlink/bundle/YouCompleteMe"]
+	path = vim/vim.symlink/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "vim/vim.symlink/bundle/vim-surround"]
+	path = vim/vim.symlink/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
