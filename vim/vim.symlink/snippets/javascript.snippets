@@ -1,9 +1,21 @@
 # lodash snippets from github.com/arnauddri/vim-lodash-snippets
 # each
 snippet each
-	${1:collection}.forEach(function(${2:obj}) {
+	_.forEach(${1:collection},function(${2:obj}) {
 		${0}
 	});
+
+snippet eacho
+	_.forEachOrOnce(${1:collection},function(${2:obj}) {
+		${0}
+	});
+
+# each
+snippet own
+	_.forOwn(${1:collection},function(${2:obj}) {
+		${0}
+	});
+
 # map
 snippet map
 	${1:collection}.map(function(${2:obj}) {
