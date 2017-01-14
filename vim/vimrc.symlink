@@ -6,11 +6,12 @@ syntax enable
 filetype plugin indent on
 set background=dark
 " colorscheme solarized
- 
-set ts=4
+
+set ts=2
+set sts=2
 set ignorecase
 set number
-set shiftwidth=4
+set shiftwidth=2
 set rnu
 autocmd InsertEnter * :set rnu!
 autocmd InsertLeave * :set rnu
@@ -19,6 +20,24 @@ autocmd WinEnter * :set relativenumber
 set path=.,**
 
 
+set foldnestmax=1
+set foldlevel=0
+set foldmethod=indent
+
+"show whitespace
+set list
+
+" special configuration for crontab http://vim.wikia.com/wiki/Editing_crontab
+set backupskip=/tmp/*,/private/tmp/*
+
+
 "to prevent clash with youcompleteme, change snippet trigger
 imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
+
+
+let g:tern_map_keys=1
+let g:tern_show_argument_hints='on_hold'
+
+map <F2> :mksession! ~/.vim_session <cr> " Quick write session with F2
+map <F3> :source ~/.vim_session <cr>     " And load session with F3
