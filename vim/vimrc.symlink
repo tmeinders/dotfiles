@@ -1,6 +1,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-autocmd VimEnter * DetectIndent 
+autocmd VimEnter * DetectIndent
 set smartindent
 syntax enable
 filetype plugin indent on
