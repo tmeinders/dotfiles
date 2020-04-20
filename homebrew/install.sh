@@ -13,6 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark node
+brew install grc coreutils spark node fzf
+brew install macvim --with-override-system-vi
 
 exit 0

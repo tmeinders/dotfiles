@@ -45,7 +45,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 set statusline=%f\ %h%w%m%r\
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%=%(%l,%c%V\ %=\ %P%)
 
@@ -53,6 +53,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:ycm_server_python_interpreter='/Users/tmeinders/.pyenv/shims/python3'
+" Don't show preview at top with autocomplete
+set completeopt-=preview
+
+autocmd BufWritePost *.py call flake8#Flake8()
+
+"autocmd BufRead *.py call flake8#Flake8()
 
 set rtp+=/usr/local/opt/fzf
 
@@ -71,8 +79,10 @@ fu! RestoreSess()
 	endif
 endfunction
 
+" set clipboard=unnamed
 
-autocmd BufLeave * call SaveSess()
 
-autocmd VimEnter * call RestoreSess()
+"autocmd BufLeave * call SaveSess()
+"
+"autocmd VimEnter * call RestoreSess()
 
